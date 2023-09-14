@@ -13,7 +13,7 @@ var rdb *redis.Client
 func SetupRedisClient() {
 	rdb = redis.NewClient(&redis.Options{
 		Addr:     "redis-master.cloud-ml-foo.svc.cluster.local:6379",
-		Password: "X1VErUTn97",
+		Password: "7XgOkaoVPb",
 		DB:       0,
 	})
 	n, err := rdb.Exists(ctx, "id").Result()
